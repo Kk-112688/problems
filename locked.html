@@ -232,7 +232,7 @@
 
 <body>
     <div class="container">
-        <h1> Circular Dependency Deadlock Demo</h1>
+        <h1>Deadlock</h1>
 
         <div class="explanation">
             <h2>What This Demonstrates:</h2>
@@ -242,9 +242,6 @@
                 <li><strong>Account B → Account C:</strong> Transfer $150</li>
                 <li><strong>Account C → Account A:</strong> Transfer $200</li>
             </ul>
-            <p style="margin-top: 15px;">Each transfer needs to lock <strong>both</strong> accounts (sender and
-                receiver) to prevent race conditions. This creates a circular dependency that leads to
-                <strong>deadlock</strong>.</p>
         </div>
 
         <div class="controls">
